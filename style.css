@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/*  Header  */
+.header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/*  Navigation Bar */
+.navbar {
+    background-color: #0f172a;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #334155;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 30px;
+}
+
+.about img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/*  Skills Section  */
+.skills {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background-color: #e2e8f0;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/*  Contact Section  */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background-color: #334155;
+}
+
+/*  Footer  */
+.footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    color: #38bdf8;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/*  Responsive Design  */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+}
